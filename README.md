@@ -18,3 +18,18 @@
 >cuDNN - 8.0.4 <br />
 >Keras - 2.4.3 <br />
 >OpenCV - 4.0.1 <br />
+>Flask <br />
+>flask_cors <br />
+### User interface of the application created:
+  **Input video will be fetched from the youtube link and processed to produce the output**
+  
+  ![image](https://user-images.githubusercontent.com/49316145/113846736-69cecc80-97b4-11eb-8f0c-fd959912ccc0.png)
+  
+### Frame wise example output:
+  
+  ![image](https://user-images.githubusercontent.com/49316145/113848247-e6ae7600-97b5-11eb-9113-f6013d762ff3.png)
+
+
+### Input/Output data:
+Input: https://youtu.be/wdDROcUAsiw
+Output: 
