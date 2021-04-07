@@ -20,6 +20,10 @@
 >OpenCV - 4.0.1 <br />
 >Flask <br />
 >flask_cors <br />
+
+**sample_video file has been provided in the given link and should be added to flask_apps/sample_video:** <br />
+https://www.dropbox.com/sh/z4jxyktqq8ww1ye/AAATH1xdbNcV_OzaAXqaFF8Ba?dl=0 <br />
+Ver7 contains the trained weights for the tennis ball tracking video and the Tennis file conatins the input and output video of the model.
 ### User interface of the application created:
   **Input video will be fetched from the youtube link and processed to produce the output**
   
@@ -29,11 +33,12 @@
   
   ![image](https://user-images.githubusercontent.com/49316145/113848247-e6ae7600-97b5-11eb-9113-f6013d762ff3.png)
   
-
-### Input/Output data playlist:
-https://www.youtube.com/watch?v=wdDROcUAsiw&list=PLan-29mX9agax7fbI3juHbcQqX1_N_1bm
-
 ### Additional:
 >**Openpose paper:** Z. Cao, G. Hidalgo, T. Simon, S. -E. Wei and Y. Sheikh, "OpenPose: Realtime Multi-Person 2D Pose Estimation Using Part Affinity Fields," in IEEE >Transactions on Pattern Analysis and Machine Intelligence, vol. 43, no. 1, pp. 172-186, 1 Jan. 2021, doi: 10.1109/TPAMI.2019.2929257. <br />
 >**Openpose implementation:** https://github.com/CMU-Perceptual-Computing-Lab/openpose <br />
 >This was implemented additionally in the object tracking video clips for player pose analysis.
+
+### Input/Output data playlist:
+https://www.youtube.com/watch?v=wdDROcUAsiw&list=PLan-29mX9agax7fbI3juHbcQqX1_N_1bm
+
+
