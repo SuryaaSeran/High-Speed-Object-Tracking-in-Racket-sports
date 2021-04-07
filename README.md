@@ -6,11 +6,11 @@
 2. V. Badrinarayanan, A. Kendall and R. Cipolla, "SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 39, no. 12, pp. 2481-2495, 1 Dec. 2017, doi: 10.1109/TPAMI.2016.2644615.
 
 ### The methodology adopted: ###
-Three consecutive frames(frame i, frame i-1 and frame i-2) are concatenated and used as input for the SegNet model, while the target output of the model is the groundtruth of frame i.
+**Three consecutive frames(frame i, frame i-1 and frame i-2) are concatenated and used as input for the SegNet model, while the target output of the model is the groundtruth of frame i.
 >Epochs: 120 <br />
 >Optimizer: Adadelta <br />
 >Learning-rate: 1.0 <br />
->Steps per epoch: 200
+>Steps per epoch: 200**
 
 ### Requirements to run: ###
 >Python - 3.8.5 <br />
