@@ -32,7 +32,7 @@ Ver7 contains the trained weights for the tennis ball tracking video and the Ten
 ### Frame wise example output:
   
   ![image](https://user-images.githubusercontent.com/49316145/113848247-e6ae7600-97b5-11eb-9113-f6013d762ff3.png)
-   **The same model can be extended for badminton and table tennis, this could be trained on top of the existing tennis model with minimal data.** <br /> </br />
+   **The same model can be extended for badminton and table tennis, this could be trained on top of the existing tennis model with minimal data.** <br /> 
   ![Screenshot_34](https://user-images.githubusercontent.com/49316145/113856214-94be1e00-97be-11eb-90c3-38a7774e21f8.png)
   
   ![Screenshot_35](https://user-images.githubusercontent.com/49316145/113856512-faaaa580-97be-11eb-90f4-73ceab8c6dee.png)
