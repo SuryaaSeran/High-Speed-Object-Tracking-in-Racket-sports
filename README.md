@@ -28,7 +28,7 @@
 >Flask <br />
 >flask_cors <br />
 
-**sample_video file has been provided in the given link and should be added to flask_apps/sample_video:** <br />
+### sample_video file has been provided in the given link and should be added to flask_apps/sample_video:
 https://www.dropbox.com/sh/z4jxyktqq8ww1ye/AAATH1xdbNcV_OzaAXqaFF8Ba?dl=0 <br />
 Ver7 contains the trained weights for the tennis ball tracking video and the Tennis file conatins the input and output video of the model.
 ### User interface of the application created:
