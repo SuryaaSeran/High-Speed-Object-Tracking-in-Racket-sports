@@ -1,0 +1,24 @@
+TRAINING A NEW OBJECT TRACKING MODEL:
+
+1. Segmented frames from the sports clip with respective Object Tracking/Training/Frames/label.csv file are used in 
+Object-Tracking/Training/Generate_Groundtruth.ipynb to generate the ground truth frames. label.csv file contains filename(segmented frame number), 
+visibility class( 0 - no ball; 1 - easy-identification; 2 - hard-identification; 3 - occluded ball), x-coordinate of the ball, y-coordinate of the ball and status(can be ignored).  
+
+2. Generate the train_model_3.csv and test_model_3.csv from Object-Tracking/Training/Generate_Groundtruth.ipynb file using Object-Tracking/Training/Frames and 
+Object-Tracking/Training/Groundtruth directories.
+
+3. Model can be trained with Object-Tracking/Training/training.ipynb file. The training requires the generated train_model_3.csv file in step 2.
+
+USING THE USER APPLICATION INTERFACE:
+
+1. Open anaconda prompt and activate the environment.
+
+2. Change directory to the flask_apps path location.
+
+3. Then run the following commands to start the flask server: 
+  set FLASK_APP=predict_video.py
+  flask run --host=0.0.0.0
+
+4. The above command starts the flask server and can open the index.html file.
+
+5. Enter youtube video link of the video to be processed. (Note: Wait for the server to process and the run information is displayed in the anaconda prompt window)
