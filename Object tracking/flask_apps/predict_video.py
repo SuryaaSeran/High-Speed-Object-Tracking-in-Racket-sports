@@ -11,7 +11,6 @@ from flask import jsonify
 from flask import Flask
 import pytube
 import cv2
-from applications.video import VideoApp
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -316,9 +315,7 @@ def output(link):
     # everything is done, release the video
     video.release()
     output_video.release()
-    app = VideoApp('sample_video/Tennis/output1.mp4', 'sample_video/sample_output2.mp4', "H264", 30)
-    app.run(0)
     print("finish")
-    return output_video_path_2
+    return output_video_path_1
 
 
