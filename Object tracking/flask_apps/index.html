@@ -1,0 +1,116 @@
+<head>
+    <title>High speed ball tracking in racket sports</title>
+    <link rel="shortcut icon" href="#">
+    <style>
+    * {
+    font-size: 20px;
+        color: 	#1a1a1a;
+     }
+    div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+    }
+    #title {
+    color: #ffffff;
+    position: relative;
+    background-color: #333333;
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 28px;
+    font-family: "Times New Roman", Times, serif;
+    }
+#name-input {
+    position: relative;
+    width: 700px;
+    height: 30px;
+}
+input[type=text] {
+    color: #949494;
+    margin: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #373b3d;
+    padding: 6px 0px;
+    border-radius: 3px;
+}
+
+input[type=text]:focus {
+    border: 1px solid #373b3d;
+}
+
+#name-button{
+    position:relative;
+    margin:25px;
+}
+
+.mainheading{
+    width:600px;
+    height: 40px;
+    text-align: center;
+    margin:0 auto;
+  }
+ .inputheading{
+    background-color:#666666;
+    width:600px;
+    height:50px;
+    margin:0 auto;
+   }
+    </style>
+</head>
+<body style="background-image: url('tennis.jpg');-webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;height: 100%;background-position:100% 100%; background-size: cover; background-attachment:fixed;"
+<div >
+        <div class="mainheading">
+        <h1 id="title">Racket sports analysis using Image segmentation</h1>
+        </div>
+        <div class="inputheading">
+
+        <input id="name-input" type="text"  style="font-size: 18pt; height: 30px; width:500px;margin-left: 40px; "/>
+        <button id="name-button" style="margin-left: 200px">Fetch link </button>
+        </div>
+     <center>
+        <iframe width="700" height="500" id="inputvid" style="display: none"
+            src="">
+        </iframe>
+     </center>
+    <center>
+        <video id="videoclip" class="center" controls="controls" title="Video title" style="display: none" width="700" height="500" controls>
+            <source id="mp4video"  type="video/mp4" />
+        </video>
+    </center>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $("#name-button").click(function(event){
+            let message ={
+                name: $("#name-input").val()
+            }
+            console.log("SUCCESS1");
+            var str = $("#name-input").val();
+            var res = str.slice(0, 24);
+            var sec = str.slice(32);
+            res = res + "embed/" + sec;
+            $("#inputvid").attr("style", "display:block");
+            $("#inputvid").attr("src", res);
+
+            console.log("SUCCESS2");
+            $.post("http://localhost:5000/hello", JSON.stringify(message), function(response)
+            {
+                    console.log(response);
+                    console.log(response.output_video_path);
+
+                    var videoID = 'videoclip';
+                    var sourceID = 'mp4video';
+                    var newmp4 = 'sample_video/Tennis/output.mp4';
+
+                    $('#'+videoID).attr('style', 'display: ${(response.status == 1)} ? block : none');
+                    $('#'+videoID).get(0).pause();
+                    $('#'+sourceID).attr('src', response.output_video_path);
+                    $('#'+videoID).get(0).load();
+                    $('#'+videoID).get(0).play();
+            });
+
+        });
+    </script>
+</body>
+</html>
