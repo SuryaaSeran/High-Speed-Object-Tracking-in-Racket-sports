@@ -27,11 +27,17 @@ Ver7 contains the trained weights for the tennis ball tracking video and the Ten
 ### User interface of the application created:
   **Input video will be fetched from the youtube link and processed to produce the output**
   
-  ![image](https://user-images.githubusercontent.com/49316145/113846736-69cecc80-97b4-11eb-8f0c-fd959912ccc0.png)
+  ![image](https://user-images.githubusercontent.com/49316145/113846736-69cecc80-97b4-11eb-8f0c-fd959912ccc0.png) <br />
   
 ### Frame wise example output:
   
   ![image](https://user-images.githubusercontent.com/49316145/113848247-e6ae7600-97b5-11eb-9113-f6013d762ff3.png)
+   **The same model can be extended for badminton and table tennis, this could be trained on top of the existing tennis model with minimal data.** <br /> </br />
+  ![Screenshot_34](https://user-images.githubusercontent.com/49316145/113856214-94be1e00-97be-11eb-90c3-38a7774e21f8.png)
+  
+  ![Screenshot_35](https://user-images.githubusercontent.com/49316145/113856512-faaaa580-97be-11eb-90f4-73ceab8c6dee.png)
+
+
   
 ### Additional:
 >**Openpose paper:** Z. Cao, G. Hidalgo, T. Simon, S. -E. Wei and Y. Sheikh, "OpenPose: Realtime Multi-Person 2D Pose Estimation Using Part Affinity Fields," in IEEE >Transactions on Pattern Analysis and Machine Intelligence, vol. 43, no. 1, pp. 172-186, 1 Jan. 2021, doi: 10.1109/TPAMI.2019.2929257. <br />
